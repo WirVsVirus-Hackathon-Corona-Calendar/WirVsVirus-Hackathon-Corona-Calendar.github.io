@@ -1,24 +1,82 @@
 <template>
-  <div id="app">
-    <h1>Dein heutiges Abenteuer</h1>
+  <div
+    :style="{ backgroundImage: `url('${todaysChallenge.icon_url}')` }"
+    class="container"
+    id="todaysChallengeContainer"
+  >
+    <div class="box">
+      <h1 id="todaysChallengeText">
+        Dein heutiges Abenteuer: {{ todaysChallenge.titel }}
+      </h1>
+    </div>
 
-    <button>Hier klicken</button>
+    <button class="box">Hier klicken</button>
   </div>
 </template>
 
 <script>
+import axios from "axios";
 export default {
-  name: "TodaysChallengeView"
+  name: "TodaysChallengeView",
+  data() {
+    return {
+      loading: false,
+      post: null,
+      error: null,
+      todaysChallenge: null
+    };
+  },
+  created() {
+    this.fetchChallenge();
+  },
+  methods: {
+    fetchChallenge() {
+      axios
+        .get(
+          "https://e3bzj7x3ck.execute-api.eu-west-1.amazonaws.com/v1/challenges"
+        )
+        .then(response => response.data)
+        .then(data => data[0])
+        .then(challenge => (this.todaysChallenge = challenge));
+    }
+  }
 };
 </script>
 
 <style>
-#app {
+.container {
+  /* Full height */
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#todaysChallengeContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  background: url("../assets/diary.png");
+  width: 15em;
+  margin: auto;
+  padding: 0 1em;
+  border-radius: 1em;
+  border-color: #f7c48d;
+  border-width: 3px;
+  border-style: solid;
+}
+
+#todaysChallengeText {
   font-family: Nunito;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #6c4c46;
 }
 </style>
