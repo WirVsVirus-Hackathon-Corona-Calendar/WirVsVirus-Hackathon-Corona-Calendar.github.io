@@ -46,8 +46,11 @@ export default {
 <style>
 .container {
   /* Full height */
-  height: 100%;
-
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
