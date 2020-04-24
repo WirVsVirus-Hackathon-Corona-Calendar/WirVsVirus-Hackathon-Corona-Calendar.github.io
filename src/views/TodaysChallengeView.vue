@@ -1,16 +1,16 @@
 <template>
   <div
     :style="{ backgroundImage: `url('${todaysChallenge.icon_url}')` }"
-    class="bg"
+    class="container"
     id="todaysChallengeContainer"
   >
-    <div id="todaysChallengeTextContainer">
+    <div class="box">
       <h1 id="todaysChallengeText">
         Dein heutiges Abenteuer: {{ todaysChallenge.titel }}
       </h1>
     </div>
 
-    <button>Hier klicken</button>
+    <button class="box">Hier klicken</button>
   </div>
 </template>
 
@@ -44,10 +44,7 @@ export default {
 </script>
 
 <style>
-.bg {
-  /* The image used */
-  background-image: url("../assets/Wald_SM_Header.png");
-
+.container {
   /* Full height */
   height: 100%;
 
@@ -60,7 +57,8 @@ export default {
   width: 100%;
   height: 100%;
 }
-#todaysChallengeTextContainer {
+
+.box {
   background: url("../assets/diary.png");
   width: 15em;
   margin: auto;
