@@ -17,6 +17,13 @@ export default {
 <style>
 #todaysChallengeTextContainer {
   background: url("../assets/diary.png");
+  width: min-content;
+  margin: auto;
+  padding: 0 1em;
+  border-radius: 1em;
+  border-color: #f7c48d;
+  border-width: 3px;
+  border-style: solid;
 }
 
 #todaysChallengeText {
@@ -25,6 +32,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #6c4c46;
-  margin-top: 60px;
 }
 </style>
