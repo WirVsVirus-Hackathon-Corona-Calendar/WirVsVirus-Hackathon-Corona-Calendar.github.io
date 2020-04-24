@@ -5,12 +5,12 @@
     id="todaysChallengeContainer"
   >
     <div class="box">
-      <h1 id="todaysChallengeText">
+      <h1 class="text" id="todaysChallengeText">
         Dein heutiges Abenteuer: {{ todaysChallenge.titel }}
       </h1>
     </div>
 
-    <button class="box">Hier klicken</button>
+    <button id="clickHereButton" class="box text">Hier klicken</button>
   </div>
 </template>
 
@@ -45,16 +45,17 @@ export default {
 
 <style>
 .container {
-  /* Full height */
   height: 100vh;
   width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  display: flex;
+  flex-direction: column;
 }
 #todaysChallengeContainer {
   width: 100%;
@@ -72,11 +73,22 @@ export default {
   border-style: solid;
 }
 
-#todaysChallengeText {
+.text {
   font-family: Nunito;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #6c4c46;
+}
+
+#todaysChallengeText {
+  font-weight: 800;
+  font-size: 36px;
+}
+
+#clickHereButton {
+  font-weight: 600;
+  font-size: 36px;
+  width: 10em;
 }
 </style>
