@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <h1>Dein heutiges Abenteuer</h1>
+    <div id="todaysChallengeTextContainer">
+      <h1 id="todaysChallengeText">Dein heutiges Abenteuer</h1>
+    </div>
 
     <button>Hier klicken</button>
   </div>
@@ -13,12 +15,16 @@ export default {
 </script>
 
 <style>
-#app {
+#todaysChallengeTextContainer {
+  background: url("../assets/diary.png");
+}
+
+#todaysChallengeText {
   font-family: Nunito;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #6c4c46;
   margin-top: 60px;
 }
 </style>
