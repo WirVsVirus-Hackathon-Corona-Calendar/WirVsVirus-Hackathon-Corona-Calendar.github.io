@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header />
+    <Header image='./assets/Wald_SM_Header.png'/>
     <router-view />
   </div>
 </template>
