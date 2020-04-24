@@ -1,24 +1,20 @@
 <template>
   <div id="app">
-    <Header />
-    <router-view />
+    <h1>Dein heutiges Abenteuer</h1>
+
+    <button>Hier klicken</button>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-
 export default {
-  name: "App",
-  components: {
-    Header
-  }
+  name: "TodaysChallengeView"
 };
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Nunito;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

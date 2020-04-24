@@ -1,9 +1,5 @@
-import App from "../App.vue";
-import HelloWorld from "../components/HelloWorld.vue";
+import TodaysChallengeView from "../views/TodaysChallengeView.vue";
 
-const routes = [
-  { path: "/", component: App },
-  { path: "/helloworld", component: HelloWorld }
-];
+const routes = [{ path: "/today", component: TodaysChallengeView }];
 
 export default routes;
