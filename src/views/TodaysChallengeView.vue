@@ -1,18 +1,20 @@
 <template>
   <div id="app">
-    <router-view />
+    <h1>Dein heutiges Abenteuer</h1>
+
+    <button>Hier klicken</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: "App"
+  name: "TodaysChallengeView"
 };
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Nunito;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
