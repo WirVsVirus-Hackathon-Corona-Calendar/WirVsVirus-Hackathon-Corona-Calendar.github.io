@@ -1,4 +1,1 @@
-module.exports = {
-  publicPath:
-    process.env.NODE_ENV === "production" ? "/imfundfirus-frontend/" : "/"
-};
+module.exports = {};
