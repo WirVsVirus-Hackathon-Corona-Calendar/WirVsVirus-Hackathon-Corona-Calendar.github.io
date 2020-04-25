@@ -44,12 +44,6 @@ export default {
   float: left;
 }
 
-.header_home:hover{
-  height: 61px;
-  border-bottom: 2px solid #555555;
-  border-radius: 2px;
-}
-
 .header_home a{
   display: block;
 }
