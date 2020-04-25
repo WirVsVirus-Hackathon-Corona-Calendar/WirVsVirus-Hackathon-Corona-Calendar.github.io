@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header />
+    <Header language="Deutsch" language_short="DE"/>
     <router-view />
   </div>
 </template>

@@ -4,12 +4,25 @@
       <img class="header_logo" src='../assets/logo.png'/>
       Imf & Firus
     </a>
+    <a class="header_right header_contact" href="/contact">
+      Contact
+    </a>
+    <a class="header_right header_aboutus" href="/about">
+      About Us
+    </a>
+    <a class="header_right header_language" href="?lang=de">
+      ◍ {{language}} ({{language_short}})
+    </a>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  props: {
+    language: String,
+    language_short: String
+  }
 }
 </script>
 
@@ -26,16 +39,15 @@ export default {
   line-height: 50px;
   padding:15px;
   padding-bottom: 0;
-  color: #000;
+  color: #555;
   text-decoration: none;
   float: left;
 }
 
 .header_home:hover{
-  background-color: #ececec;
-  text-decoration: none;
-  float: left;
-  cursor: pointer;
+  height: 61px;
+  border-bottom: 2px solid #555555;
+  border-radius: 2px;
 }
 
 .header_home a{
@@ -48,5 +60,23 @@ export default {
   float: left;
   height: 50px;
 }
+
+.header_right{
+  display: block;
+  float: right;
+  height: 80px;
+  line-height: 80px;
+  text-decoration: none;
+  color: #555;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.header_right:hover{
+  height: 76px;
+  border-bottom: 2px solid #555555;
+  border-radius: 2px;
+}
+
 
 </style>
