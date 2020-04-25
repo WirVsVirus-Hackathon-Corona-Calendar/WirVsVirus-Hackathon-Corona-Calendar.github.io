@@ -5,13 +5,16 @@
       Imf & Firus
     </a>
     <img
+      v-on:click="toggleNavbar"
       class="header_burger"
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
     />
-    <a class="header_right header_settings" href="/settings">Einstellungen</a>
-    <a class="header_right header_contact" href="/contact">Contact</a>
-    <a class="header_right header_aboutus" href="/about">About Us</a>
-    <a class="header_right header_language" href="?lang=de">◍ {{language}} ({{language_short}})</a>
+    <div class="header_right_container">
+      <a class="header_right header_settings" href="/settings">Einstellungen</a>
+      <a class="header_right header_contact" href="/contact">Contact</a>
+      <a class="header_right header_aboutus" href="/about">About Us</a>
+      <a class="header_right header_language" href="?lang=de">◍ {{language}} ({{language_short}})</a>
+    </div>
   </div>
 </template>
 
@@ -21,6 +24,16 @@ export default {
   props: {
     language: String,
     language_short: String
+  },
+  methods: {
+    toggleNavbar: () => {
+      const x = document.querySelector(".header_right_container");
+      if (x.className === "header_right_container") {
+        x.className += " active";
+      } else {
+        x.className = "header_right_container";
+      }
+    }
   }
 };
 </script>
@@ -72,6 +85,14 @@ export default {
   .header {
     width: 100%;
     height: 100%;
+  }
+
+  .header_right_container {
+    display: none;
+  }
+
+  .header_right_container.active {
+    display: block;
   }
 
   .header_right {
