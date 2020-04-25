@@ -1,14 +1,26 @@
 <template>
   <div id="app">
     <h1>Deine Challenge!</h1>
-    <p>{{challengeId}}</p>
+    <p>{{challenge.titel}}</p>
   </div>
 </template>
 
 <script>
+import ChallengeService from "../service/challenge-service";
+
 export default {
   name: "ChallengeView",
-  props: ["challengeId"]
+  props: ["challengeId"],
+  data: () => {
+    return {
+      challenge: undefined
+    };
+  },
+  created() {
+    ChallengeService.instance.getById(this.challengeId).then(_challenge => {
+      this.challenge = _challenge;
+    });
+  }
 };
 </script>
 

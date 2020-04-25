@@ -24,6 +24,12 @@ class ChallengeService {
       });
   }
 
+  getById(id) {
+    return this.all.then(
+      all => all.filter(challenge => challenge.id === id)[0]
+    );
+  }
+
   get incomplete() {
     const completedIds =
       JSON.parse(window.localStorage.getItem("completedChallenges")) || [];
