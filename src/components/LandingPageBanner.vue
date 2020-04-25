@@ -1,6 +1,9 @@
 <template>
   <div class="lp_banner">
     <img v-if="img_banner" :src="img_banner" class="image image_banner" />
+    <a href="/today" class="lp_banner_play">
+        Jetzt Spielen!
+    </a>
   </div>
 </template>
 
@@ -27,6 +30,24 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.lp_banner_play{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    width: 300px;
+    height: 60px;
+    background-color: #ffaa00;
+    line-height: 60px;
+    position: absolute;
+    right: calc(50% - 150px);
+    top: 340px;
+    font-size: 30px;
+}
+
+.lp_banner_play:hover{
+    background-color: #e68a00;
 }
 
 </style>
