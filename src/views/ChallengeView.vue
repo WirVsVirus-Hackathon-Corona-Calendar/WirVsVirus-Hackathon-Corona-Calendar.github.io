@@ -1,7 +1,18 @@
 <template>
   <div id="app">
-    <h1>Deine Challenge!</h1>
-    <p>{{challenge.titel}}</p>
+    <h1>{{challenge.titel}}</h1>
+    <p>{{challenge.story_before}}</p>
+    <h2>Das brauchst du</h2>
+    <ul id="material" class="list">
+      <li v-for="item in challenge.material" :key="item">{{ item }}</li>
+    </ul>
+    <h2>Anleitung</h2>
+    <ul id="anleitung" class="list">
+      <li v-for="item in challenge.anleitung" :key="item">{{ item }}</li>
+    </ul>
+    <div v-for="attachment in challenge.attachments" :key="attachment">
+      <img :src="attachment" />
+    </div>
     <button v-on:click="completeChallenge">Fertig!</button>
   </div>
 </template>
