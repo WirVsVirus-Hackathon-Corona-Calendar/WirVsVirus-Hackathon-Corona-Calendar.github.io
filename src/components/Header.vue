@@ -84,7 +84,7 @@ export default {
 @media only screen and (max-width: 900px) {
   .header {
     width: 100%;
-    height: 100%;
+    height: 80px;
   }
 
   .header_right_container {
