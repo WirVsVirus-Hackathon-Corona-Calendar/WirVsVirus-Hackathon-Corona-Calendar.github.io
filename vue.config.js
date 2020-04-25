@@ -1,5 +1,4 @@
 module.exports = {
   publicPath:
-    process.env.NODE_ENV === "production" ? "/imfundfirus-frontend/" : "/",
-  assetsDir: '../src/assets'
+    process.env.NODE_ENV === "production" ? "/imfundfirus-frontend/" : "/"
 };
