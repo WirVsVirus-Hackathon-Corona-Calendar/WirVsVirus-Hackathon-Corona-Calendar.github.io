@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <h1>{{challenge.titel}}</h1>
-    <p>{{challenge.story_after}}</p>
-    <button v-on:click="onDoneClicked">Zurück zur Übersicht</button>
+    <h1>{{ challenge.titel }}</h1>
+    <p>{{ challenge.story_after }}</p>
+    <button v-on:click="onDoneClicked" class="margined">
+      Zurück zur Übersicht
+    </button>
   </div>
 </template>
 
@@ -31,5 +33,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

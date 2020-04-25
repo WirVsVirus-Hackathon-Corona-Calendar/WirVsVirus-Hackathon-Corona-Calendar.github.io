@@ -58,4 +58,8 @@ button {
   color: #2c3e50;
   margin: 0;
 }
+
+.margined {
+  margin: 1em 0;
+}
 </style>

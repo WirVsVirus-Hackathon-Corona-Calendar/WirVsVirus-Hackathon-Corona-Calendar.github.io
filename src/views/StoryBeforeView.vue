@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <h1>{{challenge.titel}}</h1>
-    <p>{{challenge.story_before}}</p>
-    <button v-on:click="startChallenge">Zum Abenteuer!</button>
+    <h1>{{ challenge.titel }}</h1>
+    <p>{{ challenge.story_before }}</p>
+    <button v-on:click="startChallenge" class="margined">
+      Zum Abenteuer!
+    </button>
   </div>
 </template>
 
@@ -31,5 +33,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
