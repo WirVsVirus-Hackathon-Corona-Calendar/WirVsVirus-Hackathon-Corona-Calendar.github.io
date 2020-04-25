@@ -20,7 +20,7 @@ export default {
 <style scoped>
 .lp_banner{
     height: 500px;
-    display: block;
+    display: inline-block;
     align-content: center;
     justify-content: center;
     margin: 0 auto;
@@ -42,7 +42,7 @@ export default {
     line-height: 60px;
     position: absolute;
     right: calc(50% - 150px);
-    top: 340px;
+    /*top: 340px;*/
     font-size: 30px;
 }
 
