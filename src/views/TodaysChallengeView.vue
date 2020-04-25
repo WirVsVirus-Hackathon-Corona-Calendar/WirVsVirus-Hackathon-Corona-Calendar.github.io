@@ -5,10 +5,14 @@
     id="todaysChallengeContainer"
   >
     <div class="box">
-      <h1 class="text" id="todaysChallengeText">Dein heutiges Abenteuer: {{ todaysChallenge.titel }}</h1>
+      <h1 class="text" id="todaysChallengeText">
+        Dein heutiges Abenteuer: {{ todaysChallenge.titel }}
+      </h1>
     </div>
 
-    <button v-on:click="startChallenge" id="clickHereButton">Hier klicken</button>
+    <button v-on:click="startChallenge" id="clickHereButton">
+      Hier klicken
+    </button>
   </div>
 </template>
 
@@ -42,11 +46,7 @@ export default {
 
 <style>
 .container {
-  height: 100vh;
   width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,8 +56,8 @@ export default {
   z-index: -1;
 }
 #todaysChallengeContainer {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: calc(100vh - 80px);
 }
 
 .box {
