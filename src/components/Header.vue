@@ -4,6 +4,9 @@
       <img class="header_logo" src='../assets/logo.png'/>
       Imf & Firus
     </a>
+    <a class="header_right header_settings" href="/settings">
+      Settings
+    </a>
     <a class="header_right header_contact" href="/contact">
       Contact
     </a>
