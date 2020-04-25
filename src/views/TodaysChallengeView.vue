@@ -8,7 +8,7 @@
       <h1 class="text" id="todaysChallengeText">Dein heutiges Abenteuer: {{ todaysChallenge.titel }}</h1>
     </div>
 
-    <button v-on:click="startChallenge" id="clickHereButton" class="box text">Hier klicken</button>
+    <button v-on:click="startChallenge" id="clickHereButton">Hier klicken</button>
   </div>
 </template>
 
@@ -32,7 +32,9 @@ export default {
       });
     },
     startChallenge() {
-      router.push("/challenges/" + this.todaysChallenge.id.toString());
+      router.push(
+        "/challenges/" + this.todaysChallenge.id.toString() + "/before"
+      );
     }
   }
 };
