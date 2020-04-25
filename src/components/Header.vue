@@ -5,17 +5,17 @@
       Imf & Firus
     </a>
     <a class="header_right header_settings" href="/settings">
-      Settings
+      Einstellungen
     </a>
-    <a class="header_right header_contact" href="/contact">
-      Contact
-    </a>
-    <a class="header_right header_aboutus" href="/about">
-      About Us
-    </a>
-    <a class="header_right header_language" href="?lang=de">
-      ◍ {{language}} ({{language_short}})
-    </a>
+    <!--<a class="header_right header_contact" href="/contact">-->
+    <!--  Contact-->
+    <!--</a>-->
+    <!--<a class="header_right header_aboutus" href="/about">-->
+    <!--  About Us-->
+    <!--</a>-->
+    <!--<a class="header_right header_language" href="?lang=de">-->
+    <!--  ◍ {{language}} ({{language_short}})-->
+    <!--</a>-->
   </div>
 </template>
 
