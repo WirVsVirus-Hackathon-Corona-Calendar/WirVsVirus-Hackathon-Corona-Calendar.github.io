@@ -5,7 +5,7 @@ console.log(process.env.NODE_ENV);
 
 const router = new VueRouter({
   mode: "history",
-  base: process.env.NODE_ENV === "production" ? "/imfundfirus-frontend" : "/",
+  base: process.env.NODE_ENV === "production" ? "/imfundfirus-frontend/" : "/",
   routes
 });
 
