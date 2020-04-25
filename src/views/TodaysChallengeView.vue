@@ -5,27 +5,20 @@
     id="todaysChallengeContainer"
   >
     <div class="box">
-      <h1 class="text" id="todaysChallengeText">
-        Dein heutiges Abenteuer: {{ todaysChallenge.titel }}
-      </h1>
+      <h1 class="text" id="todaysChallengeText">Dein heutiges Abenteuer: {{ todaysChallenge.titel }}</h1>
     </div>
 
-    <button v-on:click="startChallenge" id="clickHereButton" class="box text">
-      Hier klicken
-    </button>
+    <button v-on:click="startChallenge" id="clickHereButton" class="box text">Hier klicken</button>
   </div>
 </template>
 
 <script>
-import axios from "axios";
+import ChallengeService from "../service/challenge-service";
 import router from "../router";
 export default {
   name: "TodaysChallengeView",
   data() {
     return {
-      loading: false,
-      post: null,
-      error: null,
       todaysChallenge: null
     };
   },
@@ -34,15 +27,12 @@ export default {
   },
   methods: {
     fetchChallenge() {
-      axios
-        .get(
-          "https://e3bzj7x3ck.execute-api.eu-west-1.amazonaws.com/v1/challenges"
-        )
-        .then(response => response.data)
-        .then(data => data[0])
-        .then(challenge => (this.todaysChallenge = challenge));
+      ChallengeService.instance.next.then(challenge => {
+        this.todaysChallenge = challenge;
+      });
     },
     startChallenge() {
+      ChallengeService.instance.completeChallenge(this.todaysChallenge.id);
       router.push("/challenges/" + this.todaysChallenge.id.toString());
     }
   }
