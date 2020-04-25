@@ -105,6 +105,7 @@ export default {
     text-decoration: none;
     color: #555;
     border-bottom: 2px solid #f0f0f0;
+    transition-duration: 0.5;
   }
 
   .header_settings {
