@@ -20,6 +20,7 @@ export default {
 <style scoped>
 .lp_banner{
     height: 500px;
+    width: 100%;
     display: inline-block;
     align-content: center;
     justify-content: center;

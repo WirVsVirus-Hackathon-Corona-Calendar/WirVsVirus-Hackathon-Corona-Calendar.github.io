@@ -4,15 +4,16 @@
     <LandingPageText
       img_left="https://media.discordapp.net/attachments/690951465443000360/697084572218949702/Wald.png?width=506&height=899"
       header="Imf & Firus"
-      header_sub="Eine App für jeden!"
-      text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+      header_sub="Die tägliche Challenge für Kinder, um die Zeit zuhause mit analogen Spielen zu füllen! "
+      text="Eltern und Erziehungsberechtigte stehen momentan vor dem großen Problem: Was mache ich mit meinen Kindern, wenn ich im Home-Office arbeite. Dabei können wenige Minuten Beschäftigung wahre Wunder wirken. "
     />
     <div class="spacer" />
     <LandingPageText
       img_right="https://cdn.discordapp.com/attachments/690951465443000360/697084541294084137/Schlossinnen_Imf_Hamster_iPhoneX.png"
-      header="Imf & Firus"
-      header_sub="Eine App für jeden!"
-      text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+      header="Eine liebevoll gestaltete Geschichte"
+      header_sub="Jeden Tag etwas Spannendes zu entdecken"
+      text="Die zusammenhängende Geschichte sorgt bei den Kindern für Motivation, sich der Herausforderung des aktuellen Tages zu stellen, 
+      um am nächsten Tag direkt zu erfahren, wie die Geschichte weitergeht. Im Idealfall ist der Nachwuchs so jeden Tag der Isolation mehrere Stunden beschäftigt."
     />
     <div class="spacer" />
   </div>
