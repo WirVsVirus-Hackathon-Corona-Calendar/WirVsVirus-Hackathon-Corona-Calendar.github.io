@@ -32,7 +32,6 @@ export default {
       });
     },
     startChallenge() {
-      ChallengeService.instance.completeChallenge(this.todaysChallenge.id);
       router.push("/challenges/" + this.todaysChallenge.id.toString());
     }
   }
