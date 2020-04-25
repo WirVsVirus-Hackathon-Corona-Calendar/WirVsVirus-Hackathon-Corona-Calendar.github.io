@@ -47,7 +47,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .attachment {
   width: 25em;
   object-fit: cover;
@@ -63,5 +63,11 @@ export default {
 
 #done-button {
   margin-bottom: 1em;
+}
+
+p,
+li {
+  margin-left: 2em;
+  margin-right: 2em;
 }
 </style>

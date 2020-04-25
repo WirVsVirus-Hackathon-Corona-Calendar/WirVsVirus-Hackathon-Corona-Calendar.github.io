@@ -53,7 +53,6 @@ export default {
 
   display: flex;
   flex-direction: column;
-  z-index: -1;
 }
 #todaysChallengeContainer {
   width: 100vw;

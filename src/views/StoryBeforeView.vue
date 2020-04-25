@@ -33,4 +33,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+p,
+li {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+</style>
