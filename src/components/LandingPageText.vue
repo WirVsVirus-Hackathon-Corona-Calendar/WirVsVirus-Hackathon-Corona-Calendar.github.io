@@ -14,6 +14,7 @@
             {{text}}
         </div>
     </div>
+    <img v-if="img_right" :src="img_right" class="image image_right" />
   </div>
 </template>
 
@@ -22,6 +23,7 @@ export default {
   name: 'LandingPageText',
   props: {
     img_left: String,
+    img_right: String,
     header: String,
     header_sub: String,
     text: String
@@ -44,11 +46,17 @@ export default {
 .image_left{
     max-height: 450px;
     float: left;
+    margin-right: 50px;
+}
+
+.image_right{
+    max-height: 450px;
+    float: right;
+    margin-left: 50px;
 }
 
 .text_space{
     float: left;
-    margin-left: 50px;
     height: 450px;
     width: 700px;
 }
