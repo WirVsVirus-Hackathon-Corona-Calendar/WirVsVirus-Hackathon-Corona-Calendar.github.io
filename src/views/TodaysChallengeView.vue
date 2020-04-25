@@ -32,7 +32,9 @@ export default {
       });
     },
     startChallenge() {
-      router.push("/challenges/" + this.todaysChallenge.id.toString());
+      router.push(
+        "/challenges/" + this.todaysChallenge.id.toString() + "/before"
+      );
     }
   }
 };

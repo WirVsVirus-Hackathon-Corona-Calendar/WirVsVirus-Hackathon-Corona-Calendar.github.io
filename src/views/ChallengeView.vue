@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <h1>{{challenge.titel}}</h1>
-    <p>{{challenge.story_before}}</p>
     <h2>Das brauchst du</h2>
     <ul id="material" class="list">
       <li v-for="item in challenge.material" :key="item">{{ item }}</li>
@@ -19,6 +18,7 @@
 
 <script>
 import ChallengeService from "../service/challenge-service";
+import router from "../router";
 
 export default {
   name: "ChallengeView",
@@ -36,6 +36,7 @@ export default {
   methods: {
     completeChallenge: function() {
       ChallengeService.instance.completeChallenge(this.challenge.id);
+      router.push("/challenges/" + this.challengeId.toString() + "/after");
     }
   }
 };
