@@ -13,7 +13,7 @@ export default {
   name: "SettingsView",
   methods: {
     resetGame: function() {
-      window.localStorage.setItem("completedChallenges", null);
+      window.localStorage.setItem("completedChallenges", []);
 
       const snackbar = document.getElementById("snackbar");
       // Add the "show" class to DIV

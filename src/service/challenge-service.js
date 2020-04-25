@@ -31,8 +31,9 @@ class ChallengeService {
   }
 
   get incomplete() {
-    const completedIds =
-      JSON.parse(window.localStorage.getItem("completedChallenges")) || [];
+    const completedIds = JSON.parse(
+      window.localStorage.getItem("completedChallenges") || "[]"
+    );
 
     return this.all.then(all => {
       return all.filter(challenge => {
