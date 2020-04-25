@@ -3,6 +3,7 @@ import ChallengeView from "../views/ChallengeView.vue";
 import StoryBeforeView from "../views/StoryBeforeView.vue";
 import StoryAfterView from "../views/StoryAfterView.vue";
 import LandingPage from "../views/LandingPage.vue";
+import SettingsView from "../views/SettingsView.vue";
 
 const routes = [
   {
@@ -21,6 +22,7 @@ const routes = [
     props: true
   },
   { path: "/today", component: TodaysChallengeView },
+  { path: "/settings", component: SettingsView },
   { path: "/", component: LandingPage }
 ];
 
