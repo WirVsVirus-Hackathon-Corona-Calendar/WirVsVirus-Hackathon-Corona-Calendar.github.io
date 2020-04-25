@@ -75,8 +75,8 @@ export default {
 
 .header_burger {
   object-fit: scale-down;
-  height: 50px;
-  margin: 15px;
+  height: 35px;
+  margin: 22.5px;
   cursor: pointer;
   float: right;
 }
