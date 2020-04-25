@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>{{challenge.titel}}</h1>
+    <h1>{{ challenge.titel }}</h1>
     <h2>Das brauchst du</h2>
     <ul id="material" class="list">
       <li v-for="item in challenge.material" :key="item">{{ item }}</li>
@@ -42,5 +42,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
