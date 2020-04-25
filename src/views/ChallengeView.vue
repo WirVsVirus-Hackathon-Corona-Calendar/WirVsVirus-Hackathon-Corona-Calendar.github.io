@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <h1>{{ challenge.titel }}</h1>
     <h2>Das brauchst du</h2>
     <ul id="material" class="list">
@@ -9,10 +9,15 @@
     <ul id="anleitung" class="list">
       <li v-for="item in challenge.anleitung" :key="item">{{ item }}</li>
     </ul>
-    <div v-for="attachment in challenge.attachments" :key="attachment">
-      <img :src="attachment" />
+    <div id="attachment-container">
+      <img
+        v-for="attachment in challenge.attachments"
+        :key="attachment"
+        :src="attachment"
+        class="attachment"
+      />
     </div>
-    <button v-on:click="completeChallenge">Fertig!</button>
+    <button v-on:click="completeChallenge" id="done-button">Fertig!</button>
   </div>
 </template>
 
@@ -42,4 +47,21 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.attachment {
+  width: 25em;
+  object-fit: cover;
+}
+
+#attachment-container {
+  margin: 2em 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#done-button {
+  margin-bottom: 1em;
+}
+</style>
