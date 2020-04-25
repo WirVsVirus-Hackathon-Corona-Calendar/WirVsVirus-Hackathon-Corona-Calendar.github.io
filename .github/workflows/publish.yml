@@ -6,7 +6,7 @@ name: Publish
 # events but only for the master branch
 on:
   push:
-    branches: [develop]
+    branches: [master]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -29,8 +29,8 @@ jobs:
         uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
-          env:
-            FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
       - name: Upload artifact
         uses: actions/upload-artifact@v1.0.0
         with:
