@@ -85,6 +85,7 @@ export default {
   .header {
     width: 100%;
     height: 80px;
+    background-color: #fafafa;
   }
 
   .header_right_container {
