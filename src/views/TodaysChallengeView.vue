@@ -10,12 +10,15 @@
       </h1>
     </div>
 
-    <button id="clickHereButton" class="box text">Hier klicken</button>
+    <button v-on:click="startChallenge" id="clickHereButton" class="box text">
+      Hier klicken
+    </button>
   </div>
 </template>
 
 <script>
 import axios from "axios";
+import router from "../router";
 export default {
   name: "TodaysChallengeView",
   data() {
@@ -38,6 +41,9 @@ export default {
         .then(response => response.data)
         .then(data => data[0])
         .then(challenge => (this.todaysChallenge = challenge));
+    },
+    startChallenge() {
+      router.push("/challenges/" + this.todaysChallenge.id.toString());
     }
   }
 };
