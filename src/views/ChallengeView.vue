@@ -1,11 +1,11 @@
 <template>
   <div>
     <h1>{{ challenge.titel }}</h1>
-    <h2>Das brauchst du</h2>
+    <h2 class="spaced">Das brauchst du</h2>
     <ul id="material" class="list">
       <li v-for="item in challenge.material" :key="item">{{ item }}</li>
     </ul>
-    <h2>Anleitung</h2>
+    <h2 class="spaced">Anleitung</h2>
     <ul id="anleitung" class="list">
       <li v-for="item in challenge.anleitung" :key="item">{{ item }}</li>
     </ul>
@@ -69,5 +69,9 @@ p,
 li {
   margin-left: 2em;
   margin-right: 2em;
+}
+
+.spaced {
+  margin-top: 1em;
 }
 </style>
