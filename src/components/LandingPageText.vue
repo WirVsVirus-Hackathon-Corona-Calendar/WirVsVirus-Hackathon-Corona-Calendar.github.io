@@ -35,9 +35,10 @@ export default {
 <style scoped>
 .lp_textfield{
     width: 1050px;
-    height: 500px;
+    min-height: 500px;
+    height: auto;
     padding-top: 50px;
-    display: block;
+    display: inline-block;
     align-content: center;
     justify-content: center;
     margin: 0 auto;
@@ -57,7 +58,8 @@ export default {
 
 .text_space{
     float: left;
-    height: 450px;
+    min-height: 450px;
+    height: auto;
     width: 700px;
 }
 
@@ -85,6 +87,7 @@ export default {
     float: left;
     width: 100%;
     text-align: left;
+    padding-bottom: 50px;
 }
 
 
