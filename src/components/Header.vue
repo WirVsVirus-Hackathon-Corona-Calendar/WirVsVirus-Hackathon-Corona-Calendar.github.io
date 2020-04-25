@@ -38,6 +38,10 @@ export default {
     width: 100%;
     background-color: #fafafa;
   }
+
+  .header_burger{
+    display:none;
+  }
 }
 
 
@@ -73,10 +77,10 @@ export default {
 @media only screen and (max-width: 900px)
 {
   .header{
-    width:100%;
+    width: 100%;
     height: 100%;
   }
-
+  
   .header_right{
     display:block;
     float: left;
@@ -86,6 +90,10 @@ export default {
     text-decoration: none;
     color: #555;
     border-bottom: 2px solid #f0f0f0;
+  }
+
+  .header_settings{
+    border-top: 2px solid #f0f0f0;
   }
 
   .header_right:hover{
