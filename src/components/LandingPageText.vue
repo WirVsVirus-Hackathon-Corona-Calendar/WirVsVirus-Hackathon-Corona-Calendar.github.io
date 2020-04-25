@@ -90,5 +90,35 @@ export default {
     padding-bottom: 50px;
 }
 
+@media only screen and (max-width: 1100px) {
+
+    .lp_textfield{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 50px;
+    }
+
+    
+
+    .image_left{
+        float: none;
+        margin: 0;
+    }
+
+    .image_right{
+        float: none;
+        margin: 0;
+    }
+
+    .text_space{
+        float: none;
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+        min-height: 0;
+    }
+}
 
 </style>

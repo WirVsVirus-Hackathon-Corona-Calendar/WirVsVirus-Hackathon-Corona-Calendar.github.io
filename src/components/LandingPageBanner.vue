@@ -42,7 +42,7 @@ export default {
     line-height: 60px;
     position: absolute;
     right: calc(50% - 150px);
-    /*top: 340px;*/
+    margin-top: 220px;
     font-size: 30px;
 }
 
