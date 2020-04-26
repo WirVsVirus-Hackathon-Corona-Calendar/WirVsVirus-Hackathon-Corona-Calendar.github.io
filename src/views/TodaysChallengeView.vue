@@ -23,7 +23,8 @@ export default {
   name: "TodaysChallengeView",
   data() {
     return {
-      todaysChallenge: null
+      todaysChallenge: null,
+      loading: true
     };
   },
   created() {
@@ -32,7 +33,12 @@ export default {
   methods: {
     fetchChallenge() {
       ChallengeService.instance.next.then(challenge => {
-        this.todaysChallenge = challenge;
+        if (!challenge) {
+          router.push("/challenges/empty");
+        } else {
+          this.loading = false;
+          this.todaysChallenge = challenge;
+        }
       });
     },
     startChallenge() {
