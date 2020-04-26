@@ -4,6 +4,7 @@ import StoryBeforeView from "../views/StoryBeforeView.vue";
 import StoryAfterView from "../views/StoryAfterView.vue";
 import LandingPage from "../views/LandingPage.vue";
 import SettingsView from "../views/SettingsView.vue";
+import ContactView from "../views/ContactView.vue";
 
 const routes = [
   {
@@ -19,6 +20,11 @@ const routes = [
   {
     path: "/challenges/:challengeId",
     component: ChallengeView,
+    props: true
+  },
+  {
+    path: "/contact",
+    component: ContactView,
     props: true
   },
   { path: "/today", component: TodaysChallengeView },
