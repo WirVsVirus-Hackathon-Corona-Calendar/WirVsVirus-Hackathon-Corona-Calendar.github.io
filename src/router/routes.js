@@ -5,8 +5,14 @@ import StoryAfterView from "../views/StoryAfterView.vue";
 import LandingPage from "../views/LandingPageView.vue";
 import SettingsView from "../views/SettingsView.vue";
 import ContactView from "../views/ContactView.vue";
+import NoChallengesView from "../views/NoChallengesView.vue";
 
 const routes = [
+  {
+    path: "/challenges/empty",
+    component: NoChallengesView,
+    props: true
+  },
   {
     path: "/challenges/:challengeId/before",
     component: StoryBeforeView,
