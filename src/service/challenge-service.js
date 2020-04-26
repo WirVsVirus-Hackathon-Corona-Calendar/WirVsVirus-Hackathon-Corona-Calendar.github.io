@@ -1,4 +1,5 @@
 import axios from "axios";
+import moment from "moment";
 let instance = undefined;
 
 class ChallengeService {
@@ -18,7 +19,8 @@ class ChallengeService {
       .get(
         "https://e3bzj7x3ck.execute-api.eu-west-1.amazonaws.com/v1/challenges"
       )
-      .then(response => response.data);
+      .then(response => response.data)
+      .then(challenges => challenges.sort((a, b) => a.order > b.order));
   }
 
   getById(id) {
@@ -28,9 +30,7 @@ class ChallengeService {
   }
 
   get incomplete() {
-    const completedIds = JSON.parse(
-      window.localStorage.getItem("completedChallenges") || "[]"
-    );
+    const completedIds = this.completed.map(challenge => challenge.id);
 
     return this.all.then(all => {
       return all.filter(challenge => {
@@ -39,7 +39,28 @@ class ChallengeService {
     });
   }
 
+  get completed() {
+    return JSON.parse(
+      window.localStorage.getItem("completedChallenges") || "[]"
+    );
+  }
+
   get next() {
+    const sortedChallenges = this.completed.sort((a, b) =>
+      moment(a.completionDate, ["YYYY-MM-DD"]).isBefore(
+        moment(b.completionDate)
+      )
+    );
+
+    const challengeDoneToday =
+      sortedChallenges.length == 0
+        ? false
+        : sortedChallenges[0].completionDate === moment().format("YYYY-MM-DD");
+
+    console.trace(challengeDoneToday);
+    if (challengeDoneToday) {
+      return Promise.resolve(undefined);
+    }
     return this.incomplete.then(incomplete => {
       return incomplete.sort((a, b) => a.order > b.order)[0];
     });
@@ -50,7 +71,8 @@ class ChallengeService {
       window.localStorage.getItem("completedChallenges") || "[]"
     );
 
-    completed.push(id);
+    const completionDateString = moment().format("YYYY-MM-DD");
+    completed.push({ id, completionDate: completionDateString });
     window.localStorage.setItem(
       "completedChallenges",
       JSON.stringify(completed)
