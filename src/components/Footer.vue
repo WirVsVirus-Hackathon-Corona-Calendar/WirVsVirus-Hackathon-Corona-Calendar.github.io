@@ -5,20 +5,13 @@
         class="footer_social footer_instagram"
         target="_blank"
         href="https://www.instagram.com/imffirus/"
-      >
-      </a>
-      <a
-        class="footer_social footer_twitter"
-        target="_blank"
-        href="https://twitter.com/imffirus"
-      >
-      </a>
+      ></a>
+      <a class="footer_social footer_twitter" target="_blank" href="https://twitter.com/imffirus"></a>
       <a
         class="footer_social footer_github"
         target="_blank"
         href="https://github.com/WirVsVirus-Hackathon-Corona-Calendar"
-      >
-      </a>
+      ></a>
       <a
         class="footer_social footer_paypal"
         target="_blank"
@@ -27,17 +20,11 @@
         <span class="tooltiptext">Mit Paypal spenden!</span>
       </a>
     </div>
-    <a class="footer_link" href="/impressum">
-      Impressum
-    </a>
+    <a class="footer_link" href="/impressum">Impressum</a>
     •
-    <a class="footer_link" href="/nutzung">
-      Nutzungsbedingungen
-    </a>
+    <a class="footer_link" href="/nutzung">Nutzungsbedingungen</a>
     •
-    <a class="footer_link" href="/datenschutz">
-      Datenschutz
-    </a>
+    <a class="footer_link" href="/datenschutz">Datenschutz</a>
     <p>© 2020 Imf & Firus. Licensed under the MIT License</p>
   </div>
 </template>
@@ -116,19 +103,19 @@ export default {
   background-position: center;
 }
 
-.footer_instagram:hover{
+.footer_instagram:hover {
   background-image: url("../assets/instagram_logo_white.png");
-  background-color: #F00075;
+  background-color: #f00075;
 }
-.footer_twitter:hover{
+.footer_twitter:hover {
   background-image: url("../assets/twitter_logo_white.png");
-  background-color: #00B3E1;
+  background-color: #00b3e1;
 }
-.footer_github:hover{
+.footer_github:hover {
   background-image: url("../assets/github_logo_white.png");
   background-color: #24292e;
 }
-.footer_paypal:hover{
+.footer_paypal:hover {
   background-image: url("../assets/paypal_logo_white.png");
   background-color: #013089;
 }
@@ -141,8 +128,8 @@ export default {
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-  margin-top:-60px;
-  margin-left:-60px;
+  margin-top: -60px;
+  margin-left: -60px;
 
   /* Position the tooltip */
   position: absolute;
@@ -164,8 +151,8 @@ export default {
   visibility: visible;
 }
 
-@media only screen and (max-width: 500px){
-  .footer{
+@media only screen and (max-width: 500px) {
+  .footer {
     font-size: 14px;
   }
 }
