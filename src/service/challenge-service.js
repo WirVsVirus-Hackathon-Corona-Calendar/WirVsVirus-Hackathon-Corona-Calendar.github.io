@@ -19,7 +19,8 @@ class ChallengeService {
       .get(
         "https://e3bzj7x3ck.execute-api.eu-west-1.amazonaws.com/v1/challenges"
       )
-      .then(response => response.data);
+      .then(response => response.data)
+      .then(challenges => challenges.sort((a, b) => a.order > b.order));
   }
 
   getById(id) {
