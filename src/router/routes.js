@@ -12,35 +12,49 @@ const routes = [
   {
     path: "/challenges/empty",
     component: NoChallengesView,
-    props: true
+    props: true,
+    title: "Challenges - Imf & Firus"
   },
   {
     path: "/challenges/:challengeId/before",
     component: StoryBeforeView,
-    props: true
+    props: true,
+    title: "Challenges - Imf & Firus"
   },
   {
     path: "/challenges/:challengeId/after",
     component: StoryAfterView,
-    props: true
+    props: true,
+    title: "Challenges - Imf & Firus"
   },
   {
     path: "/challenges/:challengeId",
     component: ChallengeView,
-    props: true
+    props: true,
+    title: "Challenges - Imf & Firus"
   },
   {
     path: "/contact",
     component: ContactView,
-    props: true
+    props: true,
+    title: "Kontakt - Imf & Firus"
   },
   {
     path: "/about",
-    component: AboutView
+    component: AboutView,
+    title: "Über - Imf & Firus"
   },
-  { path: "/today", component: TodaysChallengeView },
-  { path: "/settings", component: SettingsView },
-  { path: "/", component: LandingPage }
+  {
+    path: "/today",
+    component: TodaysChallengeView,
+    title: "Heute - Imf & Firus"
+  },
+  {
+    path: "/settings",
+    component: SettingsView,
+    title: "Einstellungen - Imf & Firus"
+  },
+  { path: "/", component: LandingPage, title: "Imf & Firus" }
 ];
 
 export default routes;

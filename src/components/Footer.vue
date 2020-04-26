@@ -20,11 +20,19 @@
         <span class="tooltiptext">Mit Paypal spenden!</span>
       </a>
     </div>
-    <a class="footer_link" href="/impressum">Impressum</a>
+    <a
+      class="footer_link"
+      href="https://docs.google.com/document/d/e/2PACX-1vRWsi2OKBAjtwzmlPUFeGzPSO9JXa_LmQwY6Jd68ZjQiDMXQJblchK5P8ovMmEIgZ3vQZIPrM6YWofq/pub"
+    >
+      Impressum
+    </a>
     •
-    <a class="footer_link" href="/nutzung">Nutzungsbedingungen</a>
-    •
-    <a class="footer_link" href="/datenschutz">Datenschutz</a>
+    <a
+      class="footer_link"
+      href="https://docs.google.com/document/d/e/2PACX-1vTCU100pcZTVmnmaGMoYO7gRhN5srCHDleHplQqMJza1Wid89FlOKd28czl72XHli4O5MHmUiEhFBEz/pub"
+    >
+      Datenschutz
+    </a>
     <p>© 2020 Imf & Firus. Licensed under the MIT License</p>
   </div>
 </template>
