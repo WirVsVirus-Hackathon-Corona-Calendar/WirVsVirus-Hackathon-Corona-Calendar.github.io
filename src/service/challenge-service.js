@@ -18,10 +18,7 @@ class ChallengeService {
       .get(
         "https://e3bzj7x3ck.execute-api.eu-west-1.amazonaws.com/v1/challenges"
       )
-      .then(response => response.data)
-      .then(challenge => {
-        return challenge;
-      });
+      .then(response => response.data);
   }
 
   getById(id) {
