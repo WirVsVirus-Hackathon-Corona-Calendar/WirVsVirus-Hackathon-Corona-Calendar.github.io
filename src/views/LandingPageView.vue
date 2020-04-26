@@ -20,7 +20,7 @@
       img_left="https://media.discordapp.net/attachments/690951465443000360/697084525167247410/Dorf_Imf_Hase.png?width=337&height=600"
       header="Die Geschichte"
       header_sub="Wo ist Oma nur hin?"
-      text="Das kleine Imf wohnt mit seiner heißgeliebten Oma in einem abgelegenen Dorf. Doch, dann, eines Tages ist seine Oma plötzlich nicht mehr aufzufinden. Alles was das kleine Imf herausfinden kann ist, dass möglicherweise ein Bösewicht namens Firus dahinter steckt, von dem allerding niemand so recht weiß wie er aussieht."
+      text="Das kleine Imf wohnt mit seiner heißgeliebten Oma in einem abgelegenen Dorf. Doch, dann, eines Tages ist seine Oma plötzlich nicht mehr aufzufinden. Alles was das kleine Imf herausfinden kann ist, dass möglicherweise ein Bösewicht namens Firus dahinter steckt, von dem allerdings niemand so recht weiß wie er aussieht."
     />
     <div class="spacer" />
   </div>
