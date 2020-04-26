@@ -62,7 +62,7 @@ export default {
   line-height: 50px;
   padding: 15px;
   padding-bottom: 0;
-  color: #555;
+  color: #2c3e50;
   text-decoration: none;
   float: left;
 }

@@ -27,11 +27,11 @@ export default {
   font-family: Nunito;
 }
 
-html{
+html {
   min-height: 100vh;
 }
 
-body{
+body {
   min-height: 100vh;
 }
 
@@ -68,12 +68,12 @@ button {
   min-height: 100vh;
 }
 
-#app_content{
+#app_content {
   min-height: calc(100vh - 80px - 150px);
-  height:100%;
+  height: 100%;
 }
 
-#app_footer{
+#app_footer {
   bottom: 0;
 }
 

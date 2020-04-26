@@ -5,20 +5,13 @@
         class="footer_social footer_instagram"
         target="_blank"
         href="https://www.instagram.com/imffirus/"
-      >
-      </a>
-      <a
-        class="footer_social footer_twitter"
-        target="_blank"
-        href="https://twitter.com/imffirus"
-      >
-      </a>
+      ></a>
+      <a class="footer_social footer_twitter" target="_blank" href="https://twitter.com/imffirus"></a>
       <a
         class="footer_social footer_github"
         target="_blank"
         href="https://github.com/WirVsVirus-Hackathon-Corona-Calendar"
-      >
-      </a>
+      ></a>
       <a
         class="footer_social footer_paypal"
         target="_blank"
