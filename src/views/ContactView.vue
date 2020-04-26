@@ -62,6 +62,10 @@ export default {
 
 <style>
 
+.container{
+  height: 100%;
+}
+
 .headline {
 
   padding: 30px;
@@ -80,7 +84,6 @@ export default {
 }
 
 .vue-form label {
-  align: left;
   display: block;
   color: #94aab0;
   margin-bottom: 10px;
@@ -88,7 +91,6 @@ export default {
 
 .vue-form input,
 .vue-form textarea {
-  align: center;
   display: block;
   width: 100%;
   appearance: none;
@@ -110,7 +112,6 @@ export default {
 }
 
 .vue-form input[type="submit"] {
-  align: center;
   border: none;
   background: #2c3e50;
   border-radius: 0.25em;
@@ -173,6 +174,30 @@ export default {
   However, delay the fade out process for 2.5 seconds */
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@media only screen and (max-width: 600px)
+{
+  .vue-form {
+    width: 100%;
+    padding:0;
+    margin: 10px auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .vue-form input,
+  .vue-form textarea {
+    margin: 0 auto;
+    width: calc(100% - 20px);
+    padding: 10px 0px 10px 0px;
+  }
+
+  .vue-form input[type="submit"] {
+    float: none;
+    margin: 0 auto;
+  }
+
 }
 
 /* Animations to fade the snackbar in and out */
