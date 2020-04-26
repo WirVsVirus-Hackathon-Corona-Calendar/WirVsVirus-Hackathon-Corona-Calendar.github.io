@@ -1,7 +1,8 @@
 <template>
-  <div id="app">
-    <h1>Es gibt derzeit keine weiteren challenges.</h1>
+  <div class="container">
+    <h1>Es gibt derzeit keine weiteren Challenges.</h1>
     <h2>Komm doch morgen noch einmal vorbei!</h2>
+    <img src="../assets/characters.png" alt="characters" />
     <button v-on:click="onDoneClicked" class="margined">
       Zurück
     </button>
@@ -28,6 +29,18 @@ export default {
 </script>
 
 <style scoped>
+img {
+  width: 25em;
+  object-fit: cover;
+  max-width: 90vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 p,
 li,
 h1 {
