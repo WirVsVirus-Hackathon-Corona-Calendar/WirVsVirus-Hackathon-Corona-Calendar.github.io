@@ -27,15 +27,17 @@
         <span class="tooltiptext">Mit Paypal spenden!</span>
       </a>
     </div>
-    <a class="footer_link" href="/impressum">
+    <a
+      class="footer_link"
+      href="https://docs.google.com/document/d/e/2PACX-1vRWsi2OKBAjtwzmlPUFeGzPSO9JXa_LmQwY6Jd68ZjQiDMXQJblchK5P8ovMmEIgZ3vQZIPrM6YWofq/pub"
+    >
       Impressum
     </a>
     •
-    <a class="footer_link" href="/nutzung">
-      Nutzungsbedingungen
-    </a>
-    •
-    <a class="footer_link" href="/datenschutz">
+    <a
+      class="footer_link"
+      href="https://docs.google.com/document/d/e/2PACX-1vTCU100pcZTVmnmaGMoYO7gRhN5srCHDleHplQqMJza1Wid89FlOKd28czl72XHli4O5MHmUiEhFBEz/pub"
+    >
       Datenschutz
     </a>
     <p>© 2020 Imf & Firus. Licensed under the MIT License</p>
@@ -116,19 +118,19 @@ export default {
   background-position: center;
 }
 
-.footer_instagram:hover{
+.footer_instagram:hover {
   background-image: url("../assets/instagram_logo_white.png");
-  background-color: #F00075;
+  background-color: #f00075;
 }
-.footer_twitter:hover{
+.footer_twitter:hover {
   background-image: url("../assets/twitter_logo_white.png");
-  background-color: #00B3E1;
+  background-color: #00b3e1;
 }
-.footer_github:hover{
+.footer_github:hover {
   background-image: url("../assets/github_logo_white.png");
   background-color: #24292e;
 }
-.footer_paypal:hover{
+.footer_paypal:hover {
   background-image: url("../assets/paypal_logo_white.png");
   background-color: #013089;
 }
@@ -141,8 +143,8 @@ export default {
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-  margin-top:-60px;
-  margin-left:-60px;
+  margin-top: -60px;
+  margin-left: -60px;
 
   /* Position the tooltip */
   position: absolute;
@@ -164,8 +166,8 @@ export default {
   visibility: visible;
 }
 
-@media only screen and (max-width: 500px){
-  .footer{
+@media only screen and (max-width: 500px) {
+  .footer {
     font-size: 14px;
   }
 }
