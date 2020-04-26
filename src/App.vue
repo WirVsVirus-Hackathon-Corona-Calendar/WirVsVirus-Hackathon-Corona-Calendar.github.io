@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <Header language="Deutsch" language_short="DE" />
-    <router-view />
-    <Footer />
+    <router-view id="app_content" />
+    <Footer id="app_footer" />
   </div>
 </template>
 
@@ -25,6 +25,14 @@ export default {
   padding: 0;
 
   font-family: Nunito;
+}
+
+html{
+  min-height: 100vh;
+}
+
+body{
+  min-height: 100vh;
 }
 
 p {
@@ -57,6 +65,16 @@ button {
   text-align: center;
   color: #2c3e50;
   margin: 0;
+  min-height: 100vh;
+}
+
+#app_content{
+  min-height: calc(100vh - 80px - 150px);
+  height:100%;
+}
+
+#app_footer{
+  bottom: 0;
 }
 
 .margined {

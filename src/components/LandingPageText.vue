@@ -48,6 +48,7 @@ export default {
     max-height: 450px;
     float: left;
     margin-right: 50px;
+    padding-bottom: 50px;
 }
 
 .image_right{

@@ -13,6 +13,12 @@
         href="https://twitter.com/imffirus"
       >
       </a>
+      <a
+        class="footer_social footer_github"
+        target="_blank"
+        href="https://github.com/WirVsVirus-Hackathon-Corona-Calendar"
+      >
+      </a>
     </div>
     <a class="footer_link" href="/impressum">
       Impressum
@@ -72,24 +78,46 @@ export default {
 }
 
 .footer_social:last-child {
-  display: inline-block;
-  background-color: #ececec;
-  height: 40px;
-  width: 40px;
   margin: 0px;
 }
 
 .footer_instagram {
-  background-image: url("../assets/instagram_logo.png");
+  background-image: url("../assets/instagram_logo_black.png");
   background-size: 29px 29px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .footer_twitter {
-  background-image: url("../assets/Twitter_Logo_Blue.png");
+  background-image: url("../assets/twitter_logo_black.png");
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer_github {
+  background-image: url("../assets/github_logo_black.png");
   background-size: 29px 29px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.footer_instagram:hover{
+  background-image: url("../assets/instagram_logo_white.png");
+  background-color: #F00075;
+}
+.footer_twitter:hover{
+  background-image: url("../assets/twitter_logo_white.png");
+  background-color: #00B3E1;
+}
+.footer_github:hover{
+  background-image: url("../assets/github_logo_white.png");
+  background-color: #24292e;
+}
+
+@media only screen and (max-width: 500px){
+  .footer{
+    font-size: 14px;
+  }
 }
 </style>
