@@ -23,7 +23,7 @@
 </template>
 
 <script>
-
+  import axios from "axios";
 
 export default {
 
@@ -41,8 +41,18 @@ export default {
   methods: {
     // submit form handler
     submit: function() {
+       axios
+            .post("/contactform", this.contactmessage)
+            .then(() => {
+              alert("Message sent!");
+              this.contactmessage = {};
+             
+            })
+            .catch(error => {
+              console.log(error);
+            });
     // todo: send-mail:
-      this.submitted = true;
+     
     },
     // validate by type and value
     validate: function(type, value) {
