@@ -50,6 +50,7 @@ export default {
 <style scoped>
 .attachment {
   width: 25em;
+  max-width: 90vw;
   object-fit: cover;
 }
 
