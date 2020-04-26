@@ -19,8 +19,7 @@ class ChallengeService {
       .get(
         "https://e3bzj7x3ck.execute-api.eu-west-1.amazonaws.com/v1/challenges"
       )
-      .then(response => response.data)
-      .then(challenges => challenges.sort((a, b) => a.order > b.order));
+      .then(response => response.data);
   }
 
   getById(id) {
@@ -46,11 +45,13 @@ class ChallengeService {
   }
 
   get next() {
-    const sortedChallenges = this.completed.sort((a, b) =>
-      moment(a.completionDate, ["YYYY-MM-DD"]).isBefore(
-        moment(b.completionDate)
-      )
-    );
+    const sortedChallenges = this.completed
+      .filter(challenge => !!challenge.completionDate)
+      .sort((a, b) =>
+        moment(a.completionDate, ["YYYY-MM-DD"]).isBefore(
+          moment(b.completionDate)
+        )
+      );
 
     const challengeDoneToday =
       sortedChallenges.length == 0
