@@ -13,6 +13,11 @@
       <a class="header_right header_settings" href="/settings">Einstellungen</a>
       <a class="header_right header_contact" href="/contact">Kontakt</a>
       <a class="header_right header_aboutus" href="/about">Über uns</a>
+      <a
+        class="header_right header_aboutus"
+        href="/https://paypal.me/pools/c/8nPKKPLDhb"
+        >Spenden</a
+      >
       <!--<a class="header_right header_language" href="?lang=de">◍ {{language}} ({{language_short}})</a>-->
     </div>
   </div>
