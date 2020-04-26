@@ -5,6 +5,7 @@ import StoryAfterView from "../views/StoryAfterView.vue";
 import LandingPage from "../views/LandingPageView.vue";
 import SettingsView from "../views/SettingsView.vue";
 import ContactView from "../views/ContactView.vue";
+import AboutView from "../views/AboutView.vue";
 
 const routes = [
   {
@@ -26,6 +27,10 @@ const routes = [
     path: "/contact",
     component: ContactView,
     props: true
+  },
+  {
+    path: "/about",
+    component: AboutView
   },
   { path: "/today", component: TodaysChallengeView },
   { path: "/settings", component: SettingsView },
