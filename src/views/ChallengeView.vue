@@ -1,13 +1,18 @@
 <template>
   <div>
     <h1>{{ challenge.titel }}</h1>
+    <br>
     <h2 class="spaced">Das brauchst du</h2>
+    <br>
     <ul id="material" class="list">
       <li v-for="item in challenge.material" :key="item">{{ item }}</li>
     </ul>
+    <br>
     <h2 class="spaced">Anleitung</h2>
+    <br>
     <ul id="anleitung" class="list">
       <li v-for="item in challenge.anleitung" :key="item">{{ item }}</li>
+    <br>
     </ul>
     <div id="attachment-container">
       <img
@@ -70,6 +75,8 @@ p,
 li {
   margin-left: 2em;
   margin-right: 2em;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .spaced {
